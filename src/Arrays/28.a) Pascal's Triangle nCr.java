@@ -37,7 +37,7 @@ class GFG{
 
 // In Pascal’s triangle, each number is the sum of the two numbers directly above it as shown in the figure below:
 
-class Solution{
+class   Solution{
     static int nCr(int n, int r)
     {
         // code here

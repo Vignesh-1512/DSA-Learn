@@ -104,6 +104,8 @@ class Solution
             right++;
 
         }
+
+        // Copy the sorted elements back to the original array
         for(int j=low; j<=high; j++)
             arr[j]=ans.get(j-low);
     }

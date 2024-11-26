@@ -1,3 +1,5 @@
+https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
+
 public class Solution {
     public static int longestSubarrayWithSumK(int []a, long k) {
         // Write your code here

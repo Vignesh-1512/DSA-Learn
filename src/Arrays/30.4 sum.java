@@ -57,7 +57,7 @@ class Solution {
                         temp.add(nums[k]);
                         temp.add((int) fourth);
                         temp.sort(Integer::compareTo);
-                        set.add(temp);
+                        set.add(temp)   ;
                     }
                     hashset.add((long) nums[k]);
                 }

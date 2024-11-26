@@ -1,4 +1,4 @@
-class Solution {
+class   Solution {
     // Function to rotate an array by d elements in counter-clockwise direction.
     static void rotateArr(int arr[], int d, int n) {
         // add your code here

@@ -1,4 +1,4 @@
-https://www.geeksforgeeks.org/problems/find-missing-and-repeating2512/1
+    https://www.geeksforgeeks.org/problems/find-missing-and-repeating2512/1
 
 class Solve {
     int[] findTwoElement(int arr[], int n) {

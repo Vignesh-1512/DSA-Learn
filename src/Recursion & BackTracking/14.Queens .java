@@ -1,6 +1,6 @@
 https://leetcode.com/problems/n-queens/submissions/1372948960/
 
-class Solution {
+class   Solution {
     public List<List<String>> solveNQueens(int n) {
         List<List<String>> res=new ArrayList<>();
         char[][] board=new char[n][n];
@@ -30,7 +30,7 @@ class Solution {
                 lowerDiagonal[row + col] = 1;
                 upperDiagonal[board.length - 1 + col - row] = 1;
                 solve(col + 1, board, res, leftRow, lowerDiagonal, upperDiagonal);
-                board[row][col] = '.';
+                    board[row][col] = '.';
                 leftRow[row] = 0;
                 lowerDiagonal[row + col] = 0;
                 upperDiagonal[board.length - 1 + col - row] = 0;
