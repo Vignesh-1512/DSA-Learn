@@ -60,3 +60,76 @@ an abstract class can extend another Java class and implement multiple Java inte
 Accessibility of Data Members:
 Members of a Java interface are public by default.
 A Java abstract class can have class members like private, protected, etc.
+
+!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!
+
+
+OOPS
+
+ABSTRACTION:
+Abstraction is one of the core principles of object-oriented programming (OOP). It refers to the process of hiding the implementation details of an object and exposing only the essential features or behaviors. This helps in reducing complexity and increasing efficiency by focusing on "what an object does" rather than "how it does it."
+
+Real-Life Examples of Abstraction:
+1.	Car:
+o	What you see: Steering wheel, accelerator, brakes, etc.
+o	What is hidden: Complex mechanisms like the engine, fuel injection, braking system, etc.
+2.	ATM Machine:
+o	What you see: Options to withdraw money, check balance, etc.
+o	What is hidden: The process of connecting to the bank server, verifying your PIN, fetching account details, etc.
+3.	Example of Abstraction Using Abstract Class:
+4.	java
+5.	Copy code
+6.	abstract class Animal {
+7.	    // Abstract method (no implementation)
+8.	    abstract void sound();
+9.
+10.	    // Concrete method (with implementation)
+11.	    void eat() {
+12.	        System.out.println("This animal eats food.");
+13.	    }
+14.	}
+15.
+16.	class Dog extends Animal {
+17.	    // Providing implementation for the abstract method
+18.	    @Override
+19.	    void sound() {
+20.	        System.out.println("The dog barks.");
+21.	    }
+22.	}
+23.
+24.	public class Main {
+25.	    public static void main(String[] args) {
+26.	        Animal myDog = new Dog(); // Upcasting
+27.	        myDog.sound(); // The dog barks.
+28.	        myDog.eat();   // This animal eats food.
+29.	    }
+30.	}
+
+
+Example of Abstraction Using Interface:
+java
+Copy code
+interface Vehicle {
+    void start();
+    void stop();
+}
+
+class Car implements Vehicle {
+    @Override
+    public void start() {
+        System.out.println("Car is starting...");
+    }
+    @Override
+    public void stop() {
+        System.out.println("Car is stopping...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Vehicle myCar = new Car();
+        myCar.start(); // Car is starting...
+        myCar.stop();  // Car is stopping...
+    }
+}
+
